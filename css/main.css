@@ -1,4 +1,5 @@
 /* GENERAL */
+
 * {
     padding: 0;
     margin: 0;
@@ -18,50 +19,256 @@ h4 {
     color: #fff;
 }
 
+a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #74777b;
+    text-decoration: none;
+}
+
 /* MAIN CONTENT */
-.app-aside{
-    width: 300px;
-    background-color: #000;
-}
 
-
-.container {
-    overflow-y: auto;
-}
-
-.app-content {
+.main-window {
     height: calc(100vh - 80px);
     display: flex;
 }
 
-.top-bare {
-    height: 50px;
-    background-color: lightblue;
+.sidebar, 
+.content {
+    overflow-y: hidden;
 }
 
-.Menu {
-    height: 50px;
-    background-color: lightcoral;
+/* sidebar */
+
+.sidebar {
+    flex-basis: 230px;
+    padding: 0 15px;
+    background-color: #000;
 }
 
-.col {
-    padding: 10px;
-    width: calc(100% / 6 );
+.sidebar-top {
+    height: calc(100% - 80px);
+    min-height: 300px;
+    overflow-y: auto;
 }
 
+.logo {
+    height: 80px;
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.sidebar-top li,
+.sidebar-bottom li {
+    display: flex;
+    align-items: center;
+}
+
+/* nav-home */
+
+.home li img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.home li {
+    margin-bottom: 8px;
+}
+
+/* nav-playlist */
+
+.playlist {
+    margin-top: 30px;
+}
+
+.playlist li {
+    margin-bottom: 15px;
+}
+
+.playlist li i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.playlist li:nth-child(2) a {
+    font-size: 18px;
+}
+
+/* .sidebar-bottom */
+
+.sidebar-bottom li:first-child img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.sidebar-bottom ul:first-child li {
+    border-bottom: 1px solid currentColor;
+    padding: 10px 0;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: currentColor;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.profile img {
+    width: 100%;
+}
+
+/* content */
+
+.content {
+    flex-grow: 1; 
+    width: calc(100% - 230px);
+    position: relative;
+}
+
+/* top-bar */
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.btn {
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.btn a {
+    color: #fff;
+}
+
+.scrollable {
+    padding: 83px 15px 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menu {
+    padding: 20px 0;
+
+}
+
+.menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 15px;
+} 
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h2 {
+    margin-bottom: 20px;
+}
+
+.category h4 {
+    margin: 15px 0;
+}
+
+.albums-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.albums-list .album {
+    flex-basis: calc(100% / 6 - 15px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
 
 .music {
-    display: flex;
+    width: 160px;
+    height: 160px;
+    margin: auto;
 }
 
-.col img {
+.albums-list img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
+} 
+
+.music.circle {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* FOOTER */
-.app-footer {
+.player {
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #282828;
+}
+
+.player-album,
+.player-audio {
+    flex-basis: 230px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.player-album {
+    justify-content: space-between;
+}
+
+.player-album img {
+    width: 50px;
+}
+
+.player-album h5 {
+    color: #fff;
+}
+
+.player-audio i {
+    margin-right: 15px;
+    color: #fff;
+}
+
+.player-audio .hr-grey {
+    width: 80px;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    background: currentColor;
+}
+
+.player-audio .hr-white {
+    width: 30px;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    right: 88px;
 }

@@ -17,144 +17,215 @@
 <body>
 
     <!-- MAIN CONTENT -->
-    <main class="app-content">
+    <main class="main-window">
 
-        <aside class="app-aside">
-            Spotify
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <section class="sidebar-top">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                </div>
+                <nav class="home">
+                    <ul>
+                        <li>
+                            <img src="./img/home.svg" alt="home">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <img src="./img/search.svg" alt="search">
+                            <a href="#">Cerca</a>
+                        </li>
+                        <li>
+                            <img src="./img/libreria.svg" alt="libreria">
+                            <a href="#">La tua Libreria</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="playlist">
+                    <ul>
+                        <li>
+                            <h4>PLAYLIST</h4>
+                        </li>
+                        <li>
+                            <i class="fas fa-plus-square"></i>
+                            <a href="#">Crea Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                        <li>
+                            <a href="#">Nome Playlist</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="sidebar-bottom">
+                <ul>
+                    <li>
+                        <img src="./img/download.svg" alt="download">
+                        <a href="#">Installa app</a>
+                    </li>
+                    <li>
+                        <div class="profile">
+                            <img src="./img/profile.svg" alt="profile">
+                        </div>
+                        <a href="#">John Doe</a>
+                    </li>
+                </ul>
+            </section> 
         </aside>
 
-        <div class="container">
+        <!-- CONTENT -->
+        <div class="content">
 
-            <div class="top-bare">Top bare here</div>
-            <div class="Menu">Menu</div>
-            <h3>Category title</h3>
-
-            <div class="music">
-
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
+            <div class="top-bar">
+                <div class="btn">
+                    <a href="#">Effettua l'upgrade</a>
                 </div>
             </div>
 
-            <h3>Category</h3>
-            <div class="music">
+            <div class="scrollable">
 
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">In evidenza</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e mood</a></li>
+                        <li><a href="#">Nuove uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
+                    </ul>
+                </nav>
 
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
+                <section class="category">
+                    <h2>Recently played </h2>
+                    <ul class="albums-list">
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/metal_lifting.jpg" alt="metal">
+                            </div>
+                            <h4>Heavy metal</h4>
+                            <h5>Subtitle</h5>
+                        </li>
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/stranger.jpeg" alt="stranger">
+                            </div>
+                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <h5>Kyle Dixon & Michael Stein</h5>
+                        </li>
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                            </div>
+                            <h4>A quiet place</h4>
+                            <h5>Subtitle</h5>
+                        </li>
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/split.jpeg" alt="split">
+                            </div>
+                            <h4>Split</h4>
+                            <h5>Subtitle</h5>
+                        </li>
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/cure.jpeg" alt="cure">
+                            </div>
+                            <h4>A cure for wellness</h4>
+                            <h5>Subtitle</h5>
+                        </li>
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/sinister.jpeg" alt="sinister">
+                            </div>
+                            <h4>Sinister</h4>
+                            <h5>Subtitle</h5>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="category">
+                    <h2>Creato per John Doe</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+                    <ul class="albums-list">
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/radar.jpeg" alt="radar">
+                            </div>
+                            <h4>Release Radar</h4>
+                        </li>
+                        <li class="album">
+                            <div class="music">
+                                <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                            </div>
+                            <h4>Daily Mix 1</h4> 
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="category">
+                    <h2>Artisti più popolari</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+                    <ul class="albums-list">
+                        <li class="album">
+                            <div class="music circle">
+                                <img src="./img/youg.jpeg" alt="young">
+                            </div>
+                            <h4>Lana del rey</h4>
+                        </li>
+                        <li class="album">
+                            <div class="music circle">
+                                <img src="./img/einaudi.jpeg" alt="einaudi">
+                            </div>
+                            <h4>Ludovico Einaudi</h4> 
+                        </li>
+                    </ul>
+                   
+                </section>
 
             </div>
-
-            <h3>Category</h3>
-            <div class="music">
-
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-
-                
-                <div class="col">
-                    <div class="song">
-                        <img src="./img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div>
-                        <h4>Titolo</h4>
-                        <h5>Sottotitolo</h5>
-                    </div>
-                </div>
-
-            </div>
+            
 
         </div>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="app-footer">
-        Footer here....
+    <footer class="player">
+        <div class="player-album">
+            <img src="./img/sinister.jpeg" alt="sinister">
+            <div class="title">
+                <h5>Sinister</h5>
+                <h6>Brano nome</h6>
+            </div>
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+        </div>
+        <div class="player-controller">controller</div>
+        <div class="player-audio">
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <hr class="hr-grey">
+            <hr class="hr-white">
+        </div>
     </footer>
     
 </body>
