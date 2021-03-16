@@ -17,19 +17,21 @@
 <body>
 
     <!-- MAIN CONTENT -->
-    <main class="main-window">
+    <main class="main-window flex">
 
         <!-- SIDEBAR -->
         <aside class="sidebar">
+            <!-- SECTION 1-sidebar top -->
             <section class="sidebar-top">
                 <div class="logo">
                     <img src="./img/logo.svg" alt="logo">
                 </div>
+                <!-- nav home -->
                 <nav class="home">
                     <ul>
                         <li>
                             <img src="./img/home.svg" alt="home">
-                            <a href="#">Home</a>
+                            <a href="#" class="color-w">Home</a>
                         </li>
                         <li>
                             <img src="./img/search.svg" alt="search">
@@ -41,6 +43,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- nav playlist -->
                 <nav class="playlist">
                     <ul>
                         <li>
@@ -74,7 +77,7 @@
                     </ul>
                 </nav>
             </section>
-
+            <!-- SECTION 2-sidebar bottom -->
             <section class="sidebar-bottom">
                 <ul>
                     <li>
@@ -85,7 +88,7 @@
                         <div class="profile">
                             <img src="./img/profile.svg" alt="profile">
                         </div>
-                        <a href="#">John Doe</a>
+                        <a href="#" class="color-w">John Doe</a>
                     </li>
                 </ul>
             </section> 
@@ -93,15 +96,15 @@
 
         <!-- CONTENT -->
         <div class="content">
-
-            <div class="top-bar">
+            <!-- MAIN CONTENT- top bar -->
+            <div class="top-bar flex">
                 <div class="btn">
-                    <a href="#">Effettua l'upgrade</a>
+                    <a href="#" class="color-w">Effettua l'upgrade</a>
                 </div>
             </div>
-
+            <!-- content scrollable -->
             <div class="scrollable">
-
+                <!-- NAV menu content -->
                 <nav class="menu">
                     <ul>
                         <li><a href="#">In evidenza</a></li>
@@ -112,13 +115,15 @@
                         <li><a href="#">Scopri</a></li>
                     </ul>
                 </nav>
-
+                <!-- CATEGORY MUSIC -->
+                <!-- section 1 -->
                 <section class="category">
-                    <h2>Recently played </h2>
-                    <ul class="albums-list">
+                    <h2 class="color-w">Recently played </h2>
+                    <ul class="albums-list flex">
                         <li class="album">
                             <div class="music">
                                 <img src="./img/metal_lifting.jpg" alt="metal">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Heavy metal</h4>
                             <h5>Subtitle</h5>
@@ -126,6 +131,7 @@
                         <li class="album">
                             <div class="music">
                                 <img src="./img/stranger.jpeg" alt="stranger">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
                             <h5>Kyle Dixon & Michael Stein</h5>
@@ -133,6 +139,7 @@
                         <li class="album">
                             <div class="music">
                                 <img src="./img/aquietplace.jpeg" alt="aquietplace">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>A quiet place</h4>
                             <h5>Subtitle</h5>
@@ -140,6 +147,7 @@
                         <li class="album">
                             <div class="music">
                                 <img src="./img/split.jpeg" alt="split">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Split</h4>
                             <h5>Subtitle</h5>
@@ -147,6 +155,7 @@
                         <li class="album">
                             <div class="music">
                                 <img src="./img/cure.jpeg" alt="cure">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>A cure for wellness</h4>
                             <h5>Subtitle</h5>
@@ -154,79 +163,103 @@
                         <li class="album">
                             <div class="music">
                                 <img src="./img/sinister.jpeg" alt="sinister">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Sinister</h4>
                             <h5>Subtitle</h5>
                         </li>
                     </ul>
                 </section>
-
+                <!-- section 2 -->
                 <section class="category">
-                    <h2>Creato per John Doe</h2>
+                    <h2 class="color-w">Creato per John Doe</h2>
                     <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-                    <ul class="albums-list">
+                    <ul class="albums-list flex">
                         <li class="album">
                             <div class="music">
                                 <img src="./img/radar.jpeg" alt="radar">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Release Radar</h4>
                         </li>
                         <li class="album">
                             <div class="music">
                                 <img src="./img/mixdaily.jpeg" alt="mixdaily">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Daily Mix 1</h4> 
                         </li>
                     </ul>
                 </section>
-
+                <!-- section 3 -->
                 <section class="category">
-                    <h2>Artisti più popolari</h2>
+                    <h2 class="color-w">Artisti più popolari</h2>
                     <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
-                    <ul class="albums-list">
+                    <ul class="albums-list flex">
                         <li class="album">
                             <div class="music circle">
                                 <img src="./img/youg.jpeg" alt="young">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Lana del rey</h4>
                         </li>
                         <li class="album">
                             <div class="music circle">
                                 <img src="./img/einaudi.jpeg" alt="einaudi">
+                                <div class="layover"><i class="far fa-play-circle color-w"></i></div>
                             </div>
                             <h4>Ludovico Einaudi</h4> 
                         </li>
                     </ul>
-                   
                 </section>
-
             </div>
-            
 
         </div>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="player">
-        <div class="player-album">
+    <footer class="player flex">
+        <!-- footer left -->
+        <div class="player-album flex">
             <img src="./img/sinister.jpeg" alt="sinister">
             <div class="title">
-                <h5>Sinister</h5>
+                <h5 class="color-w">Sinister</h5>
                 <h6>Brano nome</h6>
             </div>
-            <i class="far fa-heart"></i>
-            <i class="far fa-folder"></i>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
         </div>
-        <div class="player-controller">controller</div>
-        <div class="player-audio">
-            <i class="fas fa-list"></i>
-            <i class="fas fa-desktop"></i>
-            <i class="fas fa-volume-up"></i>
-            <hr class="hr-grey">
-            <hr class="hr-white">
+        <!-- footer center -->
+        <div class="player-controller flex">
+            <div class="icon-footer-center color-w">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div class="time flex">
+                <span class="color-w">0:25</span>
+                <div class="time-bar-grey">
+                    <div class="time-bar-white"></div>
+                    <i class="fas fa-circle color-w cd-circle"></i>
+                </div>
+                <span class="color-w">4:35</span>
+            </div>
+        </div>
+        <!-- footer right -->
+        <div class="player-audio flex">
+            <i class="fas fa-list color-w"></i>
+            <i class="fas fa-desktop color-w"></i>
+            <i class="fas fa-volume-up color-w"></i>
+            <div class="time-bar-grey right">
+                <div class="time-bar-white"></div>
+                <i class="fas fa-circle color-w cd-circle"></i>
+            </div>
         </div>
     </footer>
     
 </body>
 </html>
+
